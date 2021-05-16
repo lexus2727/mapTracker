@@ -2,7 +2,7 @@
 <html>
 <head>
 	
-	<title>Choropleth Tutorial - Leaflet</title>
+	<title>Population Map</title>
 
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -91,6 +91,7 @@
 		};
 	}
 
+	//hightlight and style to customize higlight
 	function highlightFeature(e) {
 		var layer = e.target;
 
@@ -110,6 +111,7 @@
 
 	var geojson;
 
+	//mouseout
 	function resetHighlight(e) {
 		geojson.resetStyle(e.target);
 		info.update();
